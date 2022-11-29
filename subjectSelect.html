@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <script>
+      function showSubject() {
+        var subject1 = document.getElementById("subject1").value;
+        var subject2 = document.getElementById("subject2").value;
+        var subject3 = document.getElementById("subject3").value;
+        var subject4 = document.getElementById("subject4").value;
+
+        var divDisplay = document.getElementById("display");
+
+        divDisplay.innerHTML =
+          "You have selected " +
+          subject1 +
+          ", " +
+          subject2 +
+          ", " +
+          subject3 +
+          " and " +
+          subject4 +
+          ".";
+      }
+    </script>
+  </head>
+  <body>
+    Please select 4 subjects.
+    <table border="0">
+      <tr>
+        <td>Subject 1:</td>
+        <td><input id="subject1" type="text" size="10" /></td>
+      </tr>
+
+      <tr>
+        <td>Subject 2:</td>
+        <td><input id="subject2" type="text" size="10" /></td>
+      </tr>
+
+      <tr>
+        <td>Subject 3:</td>
+        <td><input id="subject3" type="text" size="10" /></td>
+      </tr>
+
+      <tr>
+        <td>Subject 4:</td>
+        <td><input id="subject4" type="text" size="10" /></td>
+      </tr>
+    </table>
+
+    <br /><br />
+    <button onClick="showSubject()">Show election</button>
+    <br /><br />
+    <div id="display"></div>
+  </body>
+</html>
